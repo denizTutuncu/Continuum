@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2EFFEC8F2225F04800AD2ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFEC8E2225F04800AD2ABA /* AppDelegate.swift */; };
-		2EFFEC912225F04800AD2ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFFEC902225F04800AD2ABA /* ViewController.swift */; };
 		2EFFEC942225F04800AD2ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFEC922225F04800AD2ABA /* Main.storyboard */; };
 		2EFFEC962225F04800AD2ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFEC952225F04800AD2ABA /* Assets.xcassets */; };
 		2EFFEC992225F04800AD2ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFFEC972225F04800AD2ABA /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		2EFFEC8B2225F04800AD2ABA /* ContinuumDeniz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuumDeniz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFFEC8E2225F04800AD2ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EFFEC902225F04800AD2ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2EFFEC932225F04800AD2ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EFFEC952225F04800AD2ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EFFEC982225F04800AD2ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,29 @@
 		2EFFEC8D2225F04800AD2ABA /* ContinuumDeniz */ = {
 			isa = PBXGroup;
 			children = (
-				2EFFEC8E2225F04800AD2ABA /* AppDelegate.swift */,
-				2EFFEC902225F04800AD2ABA /* ViewController.swift */,
-				2EFFEC922225F04800AD2ABA /* Main.storyboard */,
-				2EFFEC952225F04800AD2ABA /* Assets.xcassets */,
-				2EFFEC972225F04800AD2ABA /* LaunchScreen.storyboard */,
-				2EFFEC9A2225F04800AD2ABA /* Info.plist */,
+				2EFFECA02225F05100AD2ABA /* Resources */,
+				2EFFECA12225F05700AD2ABA /* Storyboards */,
 			);
 			path = ContinuumDeniz;
+			sourceTree = "<group>";
+		};
+		2EFFECA02225F05100AD2ABA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EFFEC8E2225F04800AD2ABA /* AppDelegate.swift */,
+				2EFFEC952225F04800AD2ABA /* Assets.xcassets */,
+				2EFFEC9A2225F04800AD2ABA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2EFFECA12225F05700AD2ABA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2EFFEC922225F04800AD2ABA /* Main.storyboard */,
+				2EFFEC972225F04800AD2ABA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EFFEC912225F04800AD2ABA /* ViewController.swift in Sources */,
 				2EFFEC8F2225F04800AD2ABA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
-				INFOPLIST_FILE = ContinuumDeniz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContinuumDeniz/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
-				INFOPLIST_FILE = ContinuumDeniz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContinuumDeniz/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
